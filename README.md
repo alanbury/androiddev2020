@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
+* Name: *Ngo Viet Hoang*
+* ID: *USTH BI7 - 073*
+* Group ID: *12*
 
