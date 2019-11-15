@@ -38,17 +38,6 @@ public class ForecastFragment extends Fragment {
         return v;
     }
 
-    public LinearLayout layout(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
-        View v = new View(getContext());
-        v.setBackgroundColor(0xFFFFFF00);
-
-        LinearLayout layout = new LinearLayout(getContext());
-        layout.setOrientation(LinearLayout.VERTICAL);
-
-        return layout;
-    }
 
 
 
