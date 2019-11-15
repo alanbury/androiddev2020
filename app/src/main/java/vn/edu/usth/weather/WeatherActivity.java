@@ -12,6 +12,7 @@ private static final String TAG = "WeatherActivity";
         setContentView(R.layout.activity_weather);
         ForecastFragment firstFragment = new ForecastFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.container, firstFragment).commit();
+
     }
 
     @Override
