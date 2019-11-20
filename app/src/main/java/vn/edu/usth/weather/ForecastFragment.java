@@ -10,12 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-
+import android.widget.TextView;
+import android.widget.ImageView;
 
 
 public class ForecastFragment extends Fragment {
-
-
+    LinearLayout layout;
     public ForecastFragment() {
 
     }
@@ -26,11 +26,10 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.fragment_forecast, container, false);
+        v.setBackgroundColor(Color.parseColor("#17adb0"));
 
-        View v = new View(getContext());
-        v.setBackgroundColor(0xFFFFFF00);
-
-        LinearLayout layout = new LinearLayout(getContext());
+        layout = v.findViewById(R.id.forecastFragment);
         layout.setOrientation(LinearLayout.VERTICAL);
 
 
