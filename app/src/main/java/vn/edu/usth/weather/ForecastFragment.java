@@ -26,8 +26,8 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         View v = inflater.inflate(R.layout.fragment_forecast, container, false);
-        v.setBackgroundColor(Color.parseColor("#17adb0"));
 
         layout = v.findViewById(R.id.forecastFragment);
         layout.setOrientation(LinearLayout.VERTICAL);

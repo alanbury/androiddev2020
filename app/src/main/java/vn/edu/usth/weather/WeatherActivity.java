@@ -1,22 +1,21 @@
 package vn.edu.usth.weather;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.util.Log;
 import android.os.Bundle;
+import android.util.Log;
 
-public class WeatherActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+
+
+public class WeatherActivity extends AppCompatActivity{
 private static final String TAG = "WeatherActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-       ForecastFragment firstFragment = new ForecastFragment();
-       getSupportFragmentManager().beginTransaction().add(R.id.container, firstFragment).commit();
-
-       WeatherFragment  secondFragment = new WeatherFragment();
-       getSupportFragmentManager().beginTransaction().add(R.id.container, secondFragment).commit();
-
+        WeatherAndForecastFragment firstFragment = new WeatherAndForecastFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.container, firstFragment).commit();
 
 
     }
@@ -51,4 +50,5 @@ private static final String TAG = "WeatherActivity";
         super.onDestroy();
         Log.i(TAG, "onDestroy(): This is a log message.");
     }
+
 }
